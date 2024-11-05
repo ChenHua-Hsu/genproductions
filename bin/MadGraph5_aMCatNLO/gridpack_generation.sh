@@ -275,8 +275,8 @@ make_gridpack () {
           #get needed BSM model
           if [[ $model = *[!\ ]* ]]; then
             echo "Loading extra model $model"
-            wget --no-check-certificate https://cms-project-generators.web.cern.ch/cms-project-generators/$model	
-            cd models
+            wget --no-check-certificate https://github.com/ChenHua-Hsu/Top_FCNC_gridpack/raw/refs/heads/main/$model
+	    cd models
             if [[ $model == *".zip"* ]]; then
               unzip ../$model
             elif [[ $model == *".tgz"* ]]; then
